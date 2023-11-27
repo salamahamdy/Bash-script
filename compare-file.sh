@@ -20,3 +20,11 @@ FILE2=$(cat ${2})
 #check the 1st and 2st paramters is files 
 [ -f ${1} ]  && [ -f ${2} ] && [ "${FILE1}" == "${FILE2}" ] && echo "the content of 2 files is the same"
 
+#print array of inputs file 
+echo "the files you commpared is ${@}"
+
+#print PID for this process
+echo "the PID for this process is ${$}"
+
+#print number of paramters 
+echo "the number of paramter = ${#}" 
